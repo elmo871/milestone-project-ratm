@@ -37,11 +37,12 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
 }
 
 #nav_header {
     background-color: grey;
-
+    opacity: 0.8;
 }
 
 #nav_header a {
@@ -49,32 +50,41 @@ body {
     font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: 500;
     font-size: 36px;
-    margin-top: 50px;
-    padding: 10px;
-    height: 100%;    
-    padding: 10px;
-    text-decoration: none;
-    flex-direction: row;
-    max-height: 50px;
-}
-
-.nav_home {
-    margin: 0;
-    padding: 10px;
-    float: left;
-}
-
-.nav_bar a {
-    width: 70%;
     text-decoration: none;
     text-align: center;
-    float: right;
+    line-height: 60px;
 }
 
-ul {
-    list-style-type: none;
+.home_nav a {
+    text-align: center;
+    padding: 10px;
+}
+
+.nav_tabs {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+}
+
+.nav_segment {
+    display: inline;
+    padding: 15px;
+}
+.nav_segment a {
+    text-align: center;
+    text-decoration: none;
+    
 }
 
 li {
     margin: 0 4px;
+    width: 240px;
+    height: 75px;
+}
+
+/*------------------------- Hovers, transitions etc. ----------------------------*/
+
+.click_here:hover {
+    background: rgba(180,180,180,1.0);
+    transition: background .5s ease-in-out;
 }
