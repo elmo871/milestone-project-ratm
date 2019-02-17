@@ -1,0 +1,80 @@
+/*------------------------- Fonts ----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Special+Elite');
+
+/*------------------------- Backgrounds----------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+  background-color: rgba(100,100,100,1.0);
+}
+
+/*------------------------- Headings ----------------------------*/
+
+
+
+/*------------------------- Header ----------------------------*/
+
+#bullet-rem {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#nav_header {
+    background-color: grey;
+
+}
+
+#nav_header a {
+    color: black;
+    font-family: 'Libre Barcode 39 Text', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 50px;
+    padding: 10px;
+    height: 100%;    
+    padding: 10px;
+    text-decoration: none;
+    flex-direction: row;
+    max-height: 50px;
+}
+
+.nav_home {
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+
+.nav_bar a {
+    width: 70%;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0 4px;
+}
