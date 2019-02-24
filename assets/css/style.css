@@ -4,18 +4,17 @@
 
 /*------------------------- Backgrounds----------------------------*/
 
+/*---------- parts of 'body' & #video-background taken from https://codepen.io/mattgrosswork/full/jrdwK -----*/
+
 body {
   margin: 0;
   padding: 0;
-/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
   background: #333;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* The only rule that matters */
 #video-background {
-/*  making the video fullscreen  */
   position: fixed;
   right: 0; 
   bottom: 0;
@@ -29,62 +28,146 @@ body {
 
 /*------------------------- Headings ----------------------------*/
 
+h1 {
+    
+}
 
-
-/*------------------------- Header ----------------------------*/
+/*------------------------- Nav ----------------------------*/
 
 #bullet-rem {
     margin: 0;
     padding: 0;
     list-style-type: none;
-
 }
 
-#nav_header {
-    background-color: grey;
-    opacity: 0.8;
-}
-
-#nav_header a {
+.nav_font {
     color: black;
     font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 28px;
     text-decoration: none;
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
 }
 
-.home_nav a {
-    text-align: center;
-    padding: 10px;
+/*---------- all except .click_here after this point are taken from https://codepen.io/andornagy/pen/RNeydj with adjustments to sizing, color etc. ---------*/
+
+.toggle,
+[id^=drop] {
+	display: none;
 }
 
-.nav_tabs {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
+nav {
+    position: static;
+	margin:0;
+	padding: 0;
+	background-color: grey;
+	opacity: 0.8;
 }
 
-.nav_segment {
-    display: inline;
-    padding: 15px;
-}
-.nav_segment a {
-    text-align: center;
-    text-decoration: none;
-    
+#logo {
+    margin-top: 14px;
+    display: block;
+	padding: 0 30px;
+	float: left;
 }
 
-li {
-    margin: 0 4px;
-    width: 240px;
-    height: 75px;
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
 }
 
-/*------------------------- Hovers, transitions etc. ----------------------------*/
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	margin: 0;
+	display:inline-block;
+	float: left;
+	background-color: grey;
+	}
+
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:black;
+	text-decoration:none;
+}
 
 .click_here:hover {
     background: rgba(180,180,180,1.0);
     transition: background .5s ease-in-out;
+}
+	
+
+/*------------------------- Media Queries ----------------------------*/
+
+/*---------- The nav related media queries are also taken from https://codepen.io/andornagy/pen/RNeydj again with some adjustments --------*/ 
+
+@media all and (max-width : 1025px) {
+
+	#logo {
+		display: block;
+		padding-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+		padding-top: 5px;
+	}
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	.toggle {
+		display: block;
+		background-color: #000000;
+		padding:20px 20px;	
+		color:#FFF;
+		font-size:28px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		width: 55%;
+		}
+}
+
+@media all and (max-width : 769px) {
+
+	nav ul li {
+		display:block;
+		width: 90%;
+	}
+
+}
+
+@media all and (max-width : 415px) {
+
+	nav ul li {
+		display:block;
+		width: 100%;
+	}
+
 }
