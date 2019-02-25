@@ -36,7 +36,7 @@ h1 {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
 h3 {
@@ -47,12 +47,12 @@ h3 {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding-top: 20px; 
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .page_header {
     background: url("../textures/ripped_center_paper.png");
-    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -89,17 +89,18 @@ h3 {
 }
 
 nav {
-    position: static;
+    position: fixed;
 	margin:0;
-	padding: 20px;
 	background-color: grey;
 	opacity: 0.8;
+	width: 100%;
+	
 }
 
 #logo {
     margin-top: 14px;
     display: block;
-	padding: 0 30px;
+	padding: 0 10px;
 	float: left;
 }
 
@@ -136,6 +137,20 @@ nav a {
     transition: background .5s ease-in-out;
 }
 
+/*------------------------- Featured Section ----------------------------*/
+
+#Featured {
+	background: url("../textures/ripped_center_paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+iframe {
+   display: block;
+   margin: 0 auto;
+}
+
 /*------------------------- About Section ----------------------------*/
 
 article p {
@@ -146,8 +161,8 @@ article p {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding: 50px;
-    margin: 50px;
+    padding: 25px;
+    margin: 25px;
 }
 
 /*------------------------- Footer ----------------------------*/
@@ -157,6 +172,7 @@ footer {
 	opacity: 0.8;
 	min-height: 120px;
     margin: 0;
+    padding: 0;
 }
 
 h5 {
@@ -181,6 +197,7 @@ footer p {
     line-height: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 0;
 }
 
 .social li a i {
@@ -198,7 +215,7 @@ footer p {
     -o-transition: all 0.35s ease-in-out;
 }
 
-/*------------------------- Media Queries ----------------------------*/
+/*------------------------- Media Queries(Nav) ----------------------------*/
 
 /*---------- The nav related media queries are also taken from https://codepen.io/andornagy/pen/RNeydj again with some adjustments --------*/ 
 
@@ -263,3 +280,39 @@ footer p {
 	}
 
 }
+
+/*------------------------- Media Queries(Headings) ----------------------------*/
+
+@media all and (max-width : 1025px) {
+	h1 {
+		padding-top: 150px;
+	}
+}
+
+@media all and (max-width : 360px) {
+	h1 {
+		padding-top: 200px;
+	}
+}
+
+/*------------------------- Media Queries(Featured Section) ----------------------------*/
+
+@media all and (max-width : 769px) {
+	#Featured {
+		background-size: 130% auto;
+	}
+}
+
+@media all and (max-width : 415px) {
+	#Featured {
+		background: url("../textures/crumpled_paper.png");
+    	background-position: center;
+    	background-repeat: no-repeat;
+		background-size: 25% auto;
+	}
+	iframe {
+		width: 315px;
+		height: 315px;
+	}
+}
+
