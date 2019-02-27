@@ -36,7 +36,7 @@ h1 {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding-top: 60px;
+    
 }
 
 h3 {
@@ -73,7 +73,7 @@ h3 {
 
 .nav_font {
     color: black;
-    font-family: 'Libre Barcode 39 Text', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-weight: 500;
     font-size: 28px;
     text-decoration: none;
@@ -92,7 +92,6 @@ nav {
     position: fixed;
 	margin:0;
 	background-color: grey;
-	opacity: 0.8;
 	width: 100%;
 	
 }
@@ -121,8 +120,9 @@ nav ul {
 nav ul li {
 	margin: 0;
 	display:inline-block;
-	float: left;
 	background-color: grey;
+	text-decoration: none;
+
 	}
 
 nav a {
@@ -140,10 +140,15 @@ nav a {
 /*------------------------- Featured Section ----------------------------*/
 
 #Featured {
-	background: url("../textures/ripped_center_paper.png");
+	background: url("../textures/stuck_note.png");
     background-position: center;
     background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: 48% auto;
+	margin-left: 20px;
+   	margin-right: 20px;
+   	padding-top: 80px;
+   	padding-left: 20px;
+   	padding-right: 20px;
 }
 
 iframe {
@@ -153,6 +158,18 @@ iframe {
 
 /*------------------------- About Section ----------------------------*/
 
+#About {
+	background: url("../textures/crumpled_paper.jpg");
+   	background-position: center;
+   	background-repeat: repeat-y;
+   	background-size: 125% auto;
+   	margin-left: 20px;
+   	margin-right: 20px;
+   	padding-top: 100px;
+   	padding-left: 20px;
+   	padding-right: 20px;
+}
+
 article p {
 	color: black;
     font-family: 'Special Elite', sans-serif;
@@ -161,30 +178,28 @@ article p {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding: 25px;
-    margin: 25px;
+    padding: 27px;
+    margin: 27px;
 }
 
 /*------------------------- Footer ----------------------------*/
 
 footer {
 	background-color: grey;
-	opacity: 0.8;
 	min-height: 120px;
     margin: 0;
     padding: 0;
 }
 
-h5 {
+.footer_font {
     color: black;
-    font-family: 'Libre Barcode 39 Text', sans-serif;
-    font-weight: 500;
-    font-size: 48px;
+    font-family: 'Special Elite', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
 }
 
 footer p {
@@ -256,18 +271,24 @@ footer p {
 	[id^=drop]:checked + ul {
 		display: block;
 	}
+	
+	nav ul {
+		float: none;
+		}
 
 	nav ul li {
-		display: block;
-		width: 55%;
+		width: 100%;
 		}
 }
 
 @media all and (max-width : 769px) {
 
+    nav ul {
+		float: none;
+		}
+
 	nav ul li {
-		display:block;
-		width: 90%;
+		width: 100%;
 	}
 
 }
@@ -275,7 +296,6 @@ footer p {
 @media all and (max-width : 415px) {
 
 	nav ul li {
-		display:block;
 		width: 100%;
 	}
 
@@ -283,36 +303,58 @@ footer p {
 
 /*------------------------- Media Queries(Headings) ----------------------------*/
 
-@media all and (max-width : 1025px) {
-	h1 {
-		padding-top: 150px;
-	}
-}
 
-@media all and (max-width : 360px) {
-	h1 {
-		padding-top: 200px;
-	}
-}
+
+
 
 /*------------------------- Media Queries(Featured Section) ----------------------------*/
 
+@media all and (max-width : 1025px) {
+	#Featured {
+		padding-top: 180px;
+		background-size: 75% auto;
+
+	}
+	iframe {
+		width: 400px;
+		height: 300px;
+	}
+}
+
 @media all and (max-width : 769px) {
 	#Featured {
-		background-size: 130% auto;
+		background-size: 100% auto;
 	}
 }
 
 @media all and (max-width : 415px) {
 	#Featured {
-		background: url("../textures/crumpled_paper.png");
-    	background-position: center;
-    	background-repeat: no-repeat;
-		background-size: 25% auto;
+	    padding-top: 200px;
+		background-size: 150% auto;
+		height: 700px;
 	}
+	
+	.Featured_background {
+	    background-color: rgb(150,150,150,0.8);
+	    border-style: outset;
+	    border-width: medium;
+        background-size: 100% auto;	}
+	
 	iframe {
-		width: 315px;
-		height: 315px;
+		width: 300px;
+		height: 300px;
 	}
+	#Featured{
+    background:transparent;
+    }
 }
 
+@media all and (max-width : 360px) {
+	
+	
+	iframe {
+		width: 200px;
+		height: 200px;
+	}
+	
+}
