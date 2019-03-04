@@ -89,6 +89,7 @@ h3 {
 }
 
 nav {
+	background: url("../textures/crumpled_paper.jpg");
     position: fixed;
 	margin:0;
 	background-color: grey;
@@ -118,6 +119,7 @@ nav ul {
 	}
 	
 nav ul li {
+	background: url("../textures/old_paper.jpg");
 	margin: 0;
 	display:inline-block;
 	background-color: grey;
@@ -158,16 +160,25 @@ iframe {
 
 /*------------------------- About Section ----------------------------*/
 
+#About_section {
+	overflow: auto;
+	height: 500px;
+	margin-top: 40px;
+	padding-top: 100px;
+}
+
 #About {
 	background: url("../textures/crumpled_paper.jpg");
    	background-position: center;
    	background-repeat: repeat-y;
    	background-size: 125% auto;
-   	margin-left: 20px;
-   	margin-right: 20px;
+   	border: outset 2px black;
+   	width: 75%;
+   	margin-left: auto;
+   	margin-right: auto;
    	padding-top: 100px;
-   	padding-left: 20px;
-   	padding-right: 20px;
+   	padding-left: 40px;
+   	padding-right: 40px;
 }
 
 article p {
@@ -182,9 +193,61 @@ article p {
     margin: 27px;
 }
 
+/*------------------------- Vids Section ----------------------------*/
+
+#Vids_section {
+	height: 100%;
+	margin-top: 40px;
+	padding-top: 100px;
+}
+
+#Vids {
+	background: url("../textures/paper-creased-crumpled-background.jpg");
+   	background-position: center;
+   	background-repeat: repeat-y;
+   	background-size: 120% auto;
+   	border: outset 2px black;
+   	width:75%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	padding-top: 100px;
+   	padding-left: 40px;
+   	padding-right: 40px;
+}
+
+#Vids iframe {
+   display: block;
+   padding: 10px;
+   margin: 0 auto;
+}
+
+/*------------------------- Tracks Section ----------------------------*/
+
+#Tracks_section {
+	overflow: auto;
+	height: 600px;
+	margin-top: 50px;
+	padding-top: 100px;
+}
+
+#Tracks {
+	background: url("../textures/crumpled_length.jpg");
+   	background-position: center;
+   	background-repeat: repeat-y;
+   	background-size: 120% auto;
+   	border: outset 2px black;
+   	width:75%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	padding-top: 100px;
+   	padding-left: 40px;
+   	padding-right: 40px;
+}
+
 /*------------------------- Footer ----------------------------*/
 
 footer {
+	background: url("../textures/crumpled_paper.jpg");
 	background-color: grey;
 	min-height: 120px;
     margin: 0;
@@ -256,12 +319,15 @@ footer p {
 
 	.toggle {
 		display: block;
+		background: url("../textures/paper-creased-crumpled-background.jpg");
 		background-color: #000000;
 		padding:20px 20px;	
-		color:#FFF;
+		color:black;
 		font-size:28px;
 		text-decoration:none;
-		border:none;
+		border:outset 2px black;
+		padding: 10px;
+
 	}
 
 	.toggle:hover {
@@ -270,6 +336,8 @@ footer p {
 
 	[id^=drop]:checked + ul {
 		display: block;
+		padding: 50px;
+		margin: 10px;
 	}
 	
 	nav ul {
@@ -277,7 +345,7 @@ footer p {
 		}
 
 	nav ul li {
-		width: 100%;
+		width: 50%;
 		}
 }
 
