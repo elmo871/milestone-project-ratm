@@ -193,6 +193,59 @@ article p {
     margin: 27px;
 }
 
+#About a {
+	color: black;
+    font-family: 'Special Elite', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 30px;
+    padding: 27px;
+    margin: 27px;
+}
+
+
+
+#About #image_one img {
+	border: outset 2px black;
+    display: table;
+	height: 60%;
+    width: 90%;
+    padding: 5px;
+   margin-bottom: 10px;
+}
+
+#About #image_two img {
+	border: outset 2px black;
+    display: table;
+	height: 60%;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#About #image_three img {
+	border: outset 2px black;
+    display: table;
+	height: 60%;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#About #image_four img {
+	border: outset 2px black;
+    display: table;
+	height: 60%;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
 /*------------------------- Vids Section ----------------------------*/
 
 #Vids_section {
@@ -276,6 +329,10 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
+}
+
+footer h3 {
+		background: url("../textures/old_paper.jpg");
 }
 
 .social li a i {
