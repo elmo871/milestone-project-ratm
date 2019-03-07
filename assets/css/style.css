@@ -277,8 +277,6 @@ article p {
 /*------------------------- Tracks Section ----------------------------*/
 
 #Tracks_section {
-	overflow: auto;
-	height: 600px;
 	margin-top: 50px;
 	padding-top: 100px;
 }
@@ -295,6 +293,48 @@ article p {
    	padding-top: 100px;
    	padding-left: 40px;
    	padding-right: 40px;
+}
+
+#Tracks iframe {
+	padding-bottom: 50px;
+}
+
+/*------------------------- Sign Up Section ----------------------------*/
+
+#Sign_up_section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#Sign_up {
+	background: url("../textures/crumpled_length.jpg");
+   	background-position: center;
+   	background-repeat: repeat-y;
+   	background-size: 120% auto;
+   	border: outset 2px black;
+   	width:75%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	padding-top: 50px;
+   	padding-left: 40px;
+   	padding-right: 40px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e84610;
+    color: #fafafa;
 }
 
 /*------------------------- Footer ----------------------------*/
