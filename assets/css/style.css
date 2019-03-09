@@ -81,7 +81,7 @@ h3 {
     line-height: 30px;
 }
 
-/*---------- all except .click_here after this point are taken from https://codepen.io/andornagy/pen/RNeydj with adjustments to sizing, color etc. ---------*/
+/*---------- all except .click_here:hover after this point are taken from https://codepen.io/andornagy/pen/RNeydj with adjustments to sizing, color etc. ---------*/
 
 .toggle,
 [id^=drop] {
@@ -146,9 +146,10 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
 	background-size: 48% auto;
+	height: 700px;
 	margin-left: 20px;
    	margin-right: 20px;
-   	padding-top: 80px;
+   	padding-top: 100px;
    	padding-left: 20px;
    	padding-right: 20px;
 }
@@ -161,8 +162,6 @@ iframe {
 /*------------------------- About Section ----------------------------*/
 
 #About_section {
-	overflow: auto;
-	height: 500px;
 	margin-top: 40px;
 	padding-top: 100px;
 }
@@ -253,24 +252,31 @@ article p {
 	margin-top: 40px;
 	padding-top: 100px;
 }
+#Vids_section h1 {
+	background: url("../textures/thin_title_paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   	background-size: 50% auto;
+    margin-bottom: 100px;
+}
 
 #Vids {
-	background: url("../textures/paper-creased-crumpled-background.jpg");
-   	background-position: center;
-   	background-repeat: repeat-y;
-   	background-size: 120% auto;
-   	border: outset 2px black;
-   	width:75%;
-   	margin-left: auto;
-   	margin-right: auto;
-   	padding-top: 100px;
-   	padding-left: 40px;
-   	padding-right: 40px;
+    background: url("../textures/stuck_note.png");
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: 48% auto;
+	height: 700px;
+	margin-left: 20px;
+   	margin-right: 20px;
+   	margin-bottom: 50px;
+   	padding-top: 150px;
+   	padding-left: 20px;
+   	padding-right: 20px;
 }
+
 
 #Vids iframe {
    display: block;
-   padding: 10px;
    margin: 0 auto;
 }
 
@@ -282,7 +288,7 @@ article p {
 }
 
 #Tracks {
-	background: url("../textures/crumpled_length.jpg");
+	background: url("../textures/crumpled_paper.jpg");
    	background-position: center;
    	background-repeat: repeat-y;
    	background-size: 120% auto;
@@ -309,7 +315,7 @@ article p {
 }
 
 #Sign_up {
-	background: url("../textures/crumpled_length.jpg");
+	background: url("../textures/crumpled_paper.jpg");
    	background-position: center;
    	background-repeat: repeat-y;
    	background-size: 120% auto;
@@ -416,7 +422,7 @@ footer h3 {
 
 	.toggle {
 		display: block;
-		background: url("../textures/paper-creased-crumpled-background.jpg");
+		background: url("../textures/old_paper.jpg");
 		background-color: #000000;
 		padding:20px 20px;	
 		color:black;
@@ -471,6 +477,16 @@ footer h3 {
 
 
 
+/*------------------------- Media Queries(About Section) ----------------------------*/
+
+@media all and (max-width : 1025px) {
+	article p {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
 
 /*------------------------- Media Queries(Featured Section) ----------------------------*/
 
@@ -518,6 +534,58 @@ footer h3 {
 	
 	
 	iframe {
+		width: 200px;
+		height: 200px;
+	}
+	
+}
+
+/*------------------------- Media Queries(Vids Section) ----------------------------*/
+
+@media all and (max-width : 1025px) {
+	#Vids {
+		padding-top: 180px;
+		background-size: 75% auto;
+
+	}
+	#Vids iframe {
+		width: 400px;
+		height: 300px;
+	}
+}
+
+@media all and (max-width : 769px) {
+	#Vids {
+		background-size: 100% auto;
+	}
+}
+
+@media all and (max-width : 415px) {
+	#Vids {
+	    padding-top: 200px;
+		background-size: 150% auto;
+		height: 700px;
+	}
+	
+	.Vids_background {
+	    background-color: rgb(150,150,150,0.8);
+	    border-style: outset;
+	    border-width: medium;
+        background-size: 100% auto;	}
+	
+	#Vids iframe {
+		width: 300px;
+		height: 300px;
+	}
+	#Vids {
+    background:transparent;
+    }
+}
+
+@media all and (max-width : 360px) {
+	
+	
+	#Vids iframe {
 		width: 200px;
 		height: 200px;
 	}
